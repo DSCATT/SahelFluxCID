@@ -3,13 +3,19 @@
 
 ## Context
 Model developped for the 3rd [CID](www.ci-durable.org) held in Dakar, on November 2021.
-[Related poster](./Showcase/CID2021-Poster119.pdf) (French)
+
+**[Poster](./Showcase/CID2021-Poster119.pdf)** (French)
 
 ## Specifications
 Using [GAMA Platform](https://gama-platform.org/) v. 1.8.2 (developper build [ff11705a](https://github.com/gama-platform/gama/releases)).
 
 To run the model, launch from `main.gaml`. To run sensivity analysis, launch from `batch.gaml`.
-Random numbers lists used for the poster are included as a CSV file in `./includes/`. New lists and afferent Gini indexex can be generated using `GenerGini.gaml`
+
+
+## Exploration protocol overview
+10 000 000 lists of random numbers in ⟦0,1⟧ were generated and had their gini index computed. A sample of 10 of them was extracted with varying Gini indexes (see `GenerGini.gaml` for details). These lists were then used as input parameters for the model, as to set up the repartition of herd sizes and fertilised parcels area (using empirical factors). Sensivity analysis is then run on these indexes (_i.e._ on the lists they correspond to) with ICR (system integration metric, computed on nutrient fluxes) as the computed output of the model.
+
+Random numbers lists used for the poster are included as a CSV file in `./includes/`. New lists and afferent Gini indexes can be generated using `GenerGini.gaml`.
 
 ## References cited in the code :
 Achard, F., Banoin, M., 2003. Fallows, forage production and nutrient transfers by livestock in Niger. Nutrient Cycling in Agroecosystems 7.
