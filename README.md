@@ -2,8 +2,9 @@
 ![ShowcaseGif](./Showcase/modelShowcase.gif)
 
 ## Context
-Model developped for the 3rd [CID](www.ci-durable.org) held in Dakar, on November 2021.
+Agent-based model meant to explore the effects of inequalities on crop-livestock integration in Sahel agrosylvopastoral systems.
 
+Model developped for the 3rd [CID](www.ci-durable.org) held in Dakar, on November 2021.
 **[Poster](./Showcase/CID2021-Poster119.pdf)** (French)
 
 ## Specifications
